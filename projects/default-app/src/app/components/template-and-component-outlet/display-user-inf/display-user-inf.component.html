@@ -1,0 +1,7 @@
+<strong>Name: </strong> {{user ? user.name : 'NAN'}}<br>
+<strong>Id: </strong> {{user ? user.id : 'NAN'}}<br>
+<button mat-raised-button (click)="init()">Toast</button>
+<p> Option type: <ng-content select="option-type"></ng-content></p>
+<p> Option ngProjectAs: <ng-content select="ngProjectAs-type"></ng-content></p>
+<p> Option id: <ng-content select="#id-type"></ng-content></p>
+<p> Option class: <ng-content select=".class-type"></ng-content></p>

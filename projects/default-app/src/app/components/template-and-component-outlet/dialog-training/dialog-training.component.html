@@ -1,0 +1,21 @@
+<p-dialog [visible]="visible"  (visibleChange)="visibleChange.emit($event)"
+          [style]="{width: '450px'}"
+          header="Header" styleClass="p-fluid">
+
+  <!--  <ng-container *ngTemplateOutlet="template || defaultTemplate; context: item"></ng-container>-->
+  <!--  <ng-container *ngComponentOutlet="component">-->
+
+  <ng-container *ngIf="template">
+    <ng-template [ngTemplateOutlet]="template" [ngTemplateOutletContext]="item">
+    </ng-template>
+  </ng-container>
+
+  <ng-container *ngIf="component">
+    <ng-template [ngComponentOutlet]="component"
+                 [ngComponentOutletInjector]="myInjector"
+                 [ngComponentOutletContent]="content">
+    </ng-template>
+  </ng-container>
+</p-dialog>
+
+

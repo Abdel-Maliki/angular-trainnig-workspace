@@ -1,0 +1,30 @@
+<p-toast></p-toast>
+<br>
+<div style="display: inline">
+  <button color="primary" mat-raised-button (click)="visibleTemplateOptionChange()"> Template option</button>
+</div>
+
+<div style="display: inline; margin-left: 10px">
+  <button color="primary" mat-raised-button (click)="visibleComponentOptionChange()"> Component option</button>
+</div>
+
+
+<ng-template #myTemplate let-user="user">
+  <app-display-user-inf [user]="user">
+    <option-type>Template</option-type>
+    <div id="id-type"> <h1 style="color:red;">Id</h1></div>
+    <div class="class-type">Class option</div>
+    <ng-container ngProjectAs="ngProjectAs-type">
+      <div>ngProjectAs-type option</div>
+    </ng-container>
+  </app-display-user-inf>
+</ng-template>
+
+<app-dialog-training [(visible)]="visibleTemplateOption"
+                     [item]="item"
+                     [template]="myTemplate"></app-dialog-training>
+
+<app-dialog-training [(visible)]="visibleComponentOption"
+                     [myInjector]="myInjector"
+                     [component]="component"
+                     [content]="myContent"></app-dialog-training>
