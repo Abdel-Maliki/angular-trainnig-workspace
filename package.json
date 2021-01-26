@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "build-my-lib": "./node_modules/@angular/cli/bin/ng build --project=my-lib --prod",
+    "build-default-app": "./node_modules/@angular/cli/bin/ng build --project=default-app --prod",
+    "start-default": "ng serve --project=default-app  --port 4400 --hmr",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -43,6 +45,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
