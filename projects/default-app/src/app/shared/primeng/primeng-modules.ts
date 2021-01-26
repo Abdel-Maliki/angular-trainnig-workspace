@@ -1,7 +1,10 @@
 import {NgModule} from '@angular/core';
+import {KnobModule} from 'primeng/knob';
 
 @NgModule({
-  exports: []
+  exports: [
+    KnobModule,
+  ]
 })
 export class PrimengModules {
 }

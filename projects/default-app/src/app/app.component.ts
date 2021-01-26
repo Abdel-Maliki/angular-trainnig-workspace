@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PrimeNGConfig} from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'default-app';
+  value1 = 30;
+  constructor(private primengConfig: PrimeNGConfig) {
+    primengConfig.ripple = true;
+    // primengConfig.setTranslation()
+  }
 }
