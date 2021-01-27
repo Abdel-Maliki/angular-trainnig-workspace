@@ -1,4 +1,4 @@
-<training-lifecycle-hooks-child [user]="user" (updateUser)="updateUser()">
+<training-lifecycle-hooks-child [templateUser]="refUser" [user]="user" (updateUser)="updateUser()">
   <ng-container ngProjectAs="footer">
     <br>
     <br>
@@ -16,11 +16,21 @@
     <br>
     <br>
 
-    <training-display-user-inf trainingPane id="244" [user]="headerUser">
+    <training-display-user-inf [user]="headerUser">
       <div class="class-type">Class option</div>
       <ng-container ngProjectAs="ngProjectAs-type">
         <div>ngProjectAs-type option</div>
       </ng-container>
     </training-display-user-inf>
   </ng-container>
+
+  <ng-template trainingPane let-blblblbblbb>
+    <training-display-user-inf [id]="888" [user]="blblblbblbb">
+      <div class="class-type">Class option</div>
+      <ng-container ngProjectAs="ngProjectAs-type">
+        <div>ngProjectAs-type option</div>
+      </ng-container>
+    </training-display-user-inf>
+  </ng-template>
+
 </training-lifecycle-hooks-child>

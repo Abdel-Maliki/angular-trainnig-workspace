@@ -7,9 +7,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LifecycleHooksMainComponent implements OnInit {
 
-  user = {name: 'User', id: 1};
+  user = {name: 'User', id: 0};
   footerUser = {name: 'Footer', id: 1};
-  headerUser = {name: 'Header', id: 1};
+  headerUser = {name: 'Header', id: 2};
+  refUser = {name: 'Ref', id: 3};
 
 
   constructor() {

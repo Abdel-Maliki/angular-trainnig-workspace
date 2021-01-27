@@ -1,4 +1,4 @@
-import {Directive, Input} from '@angular/core';
+import {Directive, Input, TemplateRef} from '@angular/core';
 
 /**
  * @author abdel-maliki
@@ -9,4 +9,6 @@ import {Directive, Input} from '@angular/core';
 @Directive({selector: '[trainingPane]'})
 export class PaneDirective {
   @Input() id!: string;
+
+  constructor(public templateRef: TemplateRef<any>) {}
 }

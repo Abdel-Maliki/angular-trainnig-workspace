@@ -30,10 +30,11 @@ pour répondre aux changements sur la même entrée , car ngOnChanges continuera
 export class LifecycleHooksChildComponent
   implements OnChanges, DoCheck, OnInit, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   @Input() user: User;
+  @Input() templateUser: User;
   @Output() updateUser: EventEmitter<void> = new EventEmitter<void>();
   @ViewChild('wrapper') wrapper: ElementRef;
-  @ContentChild(PaneDirective, {static: true}) paneDirective: ElementRef;
-  @ContentChild('trainingPane', {static: true}) content!: PaneDirective;
+  @ContentChild(PaneDirective) paneDirective: PaneDirective;
+  @ContentChild('trainingPane') content!: PaneDirective;
 
 
   constructor() {
