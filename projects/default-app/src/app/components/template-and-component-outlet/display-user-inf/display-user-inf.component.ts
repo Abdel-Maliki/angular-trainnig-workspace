@@ -1,4 +1,4 @@
-import {Component, Inject, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit, Optional} from '@angular/core';
 import {User} from '../../../entity/user';
 import {MessageService} from 'primeng/api';
 
@@ -11,7 +11,7 @@ import {MessageService} from 'primeng/api';
 export class DisplayUserInfComponent implements OnInit {
   @Input() user: User;
 
-  constructor(private messageService: MessageService, @Inject(User) userInject?: User) {
+  constructor(private messageService: MessageService, @Optional() @Inject(User) userInject?: User) {
     if (userInject) {
       this.user = userInject;
     }

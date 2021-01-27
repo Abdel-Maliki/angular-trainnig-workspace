@@ -4,8 +4,6 @@ import {SharedModule} from '../../shared/shared-module';
 import {LifecycleHooksChildComponent} from './lifecycle-hooks-child/lifecycle-hooks-child.component';
 import {LifecycleHooksMainComponent} from './lifecycle-hooks-main/lifecycle-hooks-main.component';
 import {TemplateAndComponentOutletModule} from '../template-and-component-outlet/template-and-component-outlet.module';
-import {User} from '../../entity/user';
-
 
 @NgModule({
   declarations: [
@@ -21,7 +19,6 @@ import {User} from '../../entity/user';
     SharedModule,
     TemplateAndComponentOutletModule,
   ], providers: [
-    {provide: User, useValue: null}
   ]
 })
 export class LifecycleHooksModule {

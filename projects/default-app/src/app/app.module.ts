@@ -4,7 +4,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {SharedModule} from './shared/shared-module';
-import {User} from './entity/user';
 import {LifecycleHooksModule} from './components/lifecycle-hooks/lifecycle-hooks.module';
 import {DirectiveTestModule} from './components/directives/directive-test.module';
 import {TemplateAndComponentOutletModule} from './components/template-and-component-outlet/template-and-component-outlet.module';
@@ -22,7 +21,6 @@ import {TemplateAndComponentOutletModule} from './components/template-and-compon
     LifecycleHooksModule,
   ],
   providers: [
-    {provide: User, useValue: null}
   ],
   bootstrap: [AppComponent]
 })
