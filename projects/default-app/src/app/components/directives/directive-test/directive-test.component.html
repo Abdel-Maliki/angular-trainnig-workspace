@@ -1,0 +1,21 @@
+<button [trainingClass]="'blue'">Click Me</button>
+
+Show Me
+<input type="checkbox" [(ngModel)]="show">
+
+<ng-template [trainingIf]="show">
+  Using the ttIf directive
+</ng-template>
+
+<button trainingToggle>Click To Toggle</button>
+
+<button trainingToolTip toolTip="Tip of the day">Show Tip</button>
+
+<div>
+  <h2>appHighLight Directive</h2>
+  <p trainingHighLight>
+    This Text has blue Border
+  </p>
+</div>
+
+<training-box></training-box>

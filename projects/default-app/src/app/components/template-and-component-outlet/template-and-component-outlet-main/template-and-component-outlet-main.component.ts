@@ -3,7 +3,7 @@ import {User} from '../../../entity/user';
 import {DisplayUserInfComponent} from '../display-user-inf/display-user-inf.component';
 
 @Component({
-  selector: 'app-template-and-component-outlet-main',
+  selector: 'training-template-and-component-outlet-main',
   templateUrl: './template-and-component-outlet-main.component.html',
   styleUrls: ['./template-and-component-outlet-main.component.scss']
 })

@@ -10,21 +10,21 @@
 
 
 <ng-template #myTemplate let-user="user">
-  <app-display-user-inf [user]="user">
+  <training-display-user-inf [user]="user">
     <option-type>Template</option-type>
     <div id="id-type"> <h1 style="color:red;">Id</h1></div>
     <div class="class-type">Class option</div>
     <ng-container ngProjectAs="ngProjectAs-type">
       <div>ngProjectAs-type option</div>
     </ng-container>
-  </app-display-user-inf>
+  </training-display-user-inf>
 </ng-template>
 
-<app-dialog-training [(visible)]="visibleTemplateOption"
+<training-dialog-training [(visible)]="visibleTemplateOption"
                      [item]="item"
-                     [template]="myTemplate"></app-dialog-training>
+                     [template]="myTemplate"></training-dialog-training>
 
-<app-dialog-training [(visible)]="visibleComponentOption"
+<training-dialog-training [(visible)]="visibleComponentOption"
                      [myInjector]="myInjector"
                      [component]="component"
-                     [content]="myContent"></app-dialog-training>
+                     [content]="myContent"></training-dialog-training>

@@ -3,12 +3,14 @@ import {MaterialModules} from './material/material-modules';
 import {PrimengModules} from './primeng/primeng-modules';
 import {AngularModules} from './angular/angular-modules';
 import {MyLibModule} from 'my-lib';
+import {TrainingDirectiveModule} from '../directives/training-directive.module';
 
 @NgModule({
   exports: [
     MaterialModules,
     PrimengModules,
     AngularModules,
+    TrainingDirectiveModule,
     MyLibModule,
   ],
 })

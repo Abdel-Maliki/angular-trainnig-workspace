@@ -3,7 +3,7 @@ import {User} from '../../../entity/user';
 import {MessageService} from 'primeng/api';
 
 @Component({
-  selector: 'app-display-user-inf',
+  selector: 'training-display-user-inf',
   templateUrl: './display-user-inf.component.html',
   styleUrls: ['./display-user-inf.component.scss'],
   providers: []

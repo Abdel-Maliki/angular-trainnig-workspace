@@ -1,0 +1,26 @@
+<training-lifecycle-hooks-child [user]="user" (updateUser)="updateUser()">
+  <ng-container ngProjectAs="footer">
+    <br>
+    <br>
+    <training-display-user-inf #trainingPane [user]="footerUser">
+      <div class="class-type">Class option</div>
+      <ng-container ngProjectAs="ngProjectAs-type">
+        <div>ngProjectAs-type option</div>
+      </ng-container>
+    </training-display-user-inf>
+  </ng-container>
+
+  <ng-container ngProjectAs="header">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <training-display-user-inf trainingPane id="244" [user]="headerUser">
+      <div class="class-type">Class option</div>
+      <ng-container ngProjectAs="ngProjectAs-type">
+        <div>ngProjectAs-type option</div>
+      </ng-container>
+    </training-display-user-inf>
+  </ng-container>
+</training-lifecycle-hooks-child>

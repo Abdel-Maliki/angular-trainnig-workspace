@@ -3,7 +3,7 @@ import {PrimeNGConfig} from 'primeng/api';
 import {PrimeNgTranslation} from './conf/primeNgTranslation';
 
 @Component({
-  selector: 'app-root',
+  selector: 'training-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

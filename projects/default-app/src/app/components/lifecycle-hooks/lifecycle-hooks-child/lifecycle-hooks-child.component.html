@@ -1,0 +1,7 @@
+<strong>Name: </strong> {{user ? user.name : 'NAN'}}<br>
+<strong #wrapper>Id: </strong> {{user ? user.id : 'NAN'}}<br>
+<button mat-raised-button (click)="updateUser.emit()">Update user</button>
+<ng-content select="header"></ng-content>
+<ng-content select="footer"></ng-content>
+
+<div>pane: {{content?.id}}</div>

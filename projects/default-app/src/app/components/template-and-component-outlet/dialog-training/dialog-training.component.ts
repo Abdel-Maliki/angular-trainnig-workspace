@@ -2,7 +2,7 @@ import {Component, EventEmitter, Injector, Input, OnInit, Output, TemplateRef, T
 import {User} from '../../../entity/user';
 
 @Component({
-  selector: 'app-dialog-training',
+  selector: 'training-dialog-training',
   templateUrl: './dialog-training.component.html',
   styleUrls: ['./dialog-training.component.scss']
 })

@@ -15,7 +15,7 @@
       },
       "root": "projects/default-app",
       "sourceRoot": "projects/default-app/src",
-      "prefix": "app",
+      "prefix": "training",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
