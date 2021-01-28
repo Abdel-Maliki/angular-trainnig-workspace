@@ -7,6 +7,7 @@ import {SharedModule} from './shared/shared-module';
 import {LifecycleHooksModule} from './components/lifecycle-hooks/lifecycle-hooks.module';
 import {DirectiveTestModule} from './components/directives/directive-test.module';
 import {TemplateAndComponentOutletModule} from './components/template-and-component-outlet/template-and-component-outlet.module';
+import {DependencyInjectionModule} from './tuto/dependency-injection/dependency-injection.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {TemplateAndComponentOutletModule} from './components/template-and-compon
     TemplateAndComponentOutletModule,
     DirectiveTestModule,
     LifecycleHooksModule,
+    DependencyInjectionModule,
   ],
   providers: [
   ],
