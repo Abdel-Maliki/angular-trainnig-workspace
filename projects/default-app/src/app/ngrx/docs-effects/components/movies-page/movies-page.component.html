@@ -1,0 +1,14 @@
+<div *ngFor="let movie of movies$ | async">
+  {{ movie.name }}
+</div>
+
+
+<ng-container *ngrxLet="movies$ ;let movie; let e = $error, let c = $complete">
+  <div *ngIf="!e && !c">{{ movie| json }}</div>
+  <div *ngIf="e">
+    There is an error: {{e}}
+  </div>
+  <div *ngIf="c">
+    Observable completed: {{c}}
+  </div>
+</ng-container>

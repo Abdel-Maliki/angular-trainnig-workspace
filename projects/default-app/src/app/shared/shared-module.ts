@@ -4,6 +4,7 @@ import {PrimengModules} from './primeng/primeng-modules';
 import {AngularModules} from './angular/angular-modules';
 import {MyLibModule} from 'my-lib';
 import {TrainingDirectiveModule} from '../directives/training-directive.module';
+import {ReactiveComponentModule} from '@ngrx/component';
 
 @NgModule({
   exports: [
@@ -12,6 +13,7 @@ import {TrainingDirectiveModule} from '../directives/training-directive.module';
     AngularModules,
     TrainingDirectiveModule,
     MyLibModule,
+    ReactiveComponentModule,
   ],
 })
 export class SharedModule {

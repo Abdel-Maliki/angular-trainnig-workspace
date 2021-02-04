@@ -1,0 +1,19 @@
+<button class="btn" mat-raised-button (click)="increment()">Increment</button>
+
+<button class="btn" mat-raised-button (click)="decrement()">Decrement</button>
+
+<button class="btn" mat-raised-button (click)="reset()">Reset Counter</button>
+
+<div>Current Count: {{ (count$ | async).value }}</div>
+<div *ngIf="!!(count$ | async) && !!(count$ | async).username">Felicitation: {{ (count$ | async).username }}</div>
+
+
+<ng-template [ngIf]="(count$ | async).value === 10">
+  <mat-form-field appearance="outline">
+    <input class="btn" matInput [(ngModel)]="username">
+  </mat-form-field>
+  <button [disabled]="!username || username.length === 0" class="btn" mat-raised-button (click)="success()">
+    Valider
+  </button>
+</ng-template>
+
