@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {CounterModule} from './counter/counter.module';
+import {CounterModule} from './docs-started/counter.module';
 import { NgrxMainComponent } from './ngrx-main/ngrx-main.component';
 import {SelectorsDocsModule} from './docs-selectors/selectors-docs.module';
 import {DzoneTutoModule} from './dzone-tuto/dzone-tuto.module';
